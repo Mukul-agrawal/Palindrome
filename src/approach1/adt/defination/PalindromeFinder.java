@@ -27,6 +27,6 @@ public class PalindromeFinder implements PalindromeADT {
 
     @Override
     public boolean isPalindrome(String inputString) {
-        return false;
+        return inputString.equalsIgnoreCase(buildReverse(inputString));
     }
 }
