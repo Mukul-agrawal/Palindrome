@@ -1,4 +1,4 @@
-package approach1.adt.defination;
+package approach1.defination;
 
 import approach1.adt.PalindromeADT;
 
