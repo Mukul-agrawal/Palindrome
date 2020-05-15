@@ -2,14 +2,16 @@ package approach2.defination;
 
 public class PalindromeFinder {
     public boolean isPalindrome(String inputString) {
-        boolean response = false;
+        boolean response = true;
         int middle = inputString.length() / 2;
         for (int i = 0; i < middle; i++) {
             if (inputString.charAt(i) == inputString.charAt(inputString.length() - 1 - i)) {
-                response = true;
+            } else {
+                response = false;
+                break;
             }
-            break;
         }
         return response;
     }
-}
+    }
+
