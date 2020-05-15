@@ -17,7 +17,12 @@ public class PalindromeFinder implements PalindromeADT {
 
     @Override
     public String buildReverse(String inputString) {
-        return null;
+        Deque<Character> charStack = fillStack(inputString);
+        StringBuilder result = new StringBuilder();
+        while (!charStack.isEmpty()) {
+            result.append(charStack.pop());
+        }
+        return result.toString();
     }
 
     @Override
