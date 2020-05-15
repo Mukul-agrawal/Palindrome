@@ -12,7 +12,5 @@ public class Main {
             System.out.println("String is Palindrome.");
         else
             System.out.println("String is not Palindrome.");
-
     }
-    }
-
+}
